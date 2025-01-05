@@ -1,9 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <h1 className=" bg-red-700">HOLA MUNDO</h1>
+    <RouterProvider router={router} />{" "}
   </StrictMode>
 );
